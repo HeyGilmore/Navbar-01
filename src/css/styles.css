@@ -1,5 +1,29 @@
+html,
 body {
-  background-color: blueviolet;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
 }
 
+/* Navbar Container */
+#navbarContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+/* Navbar */
+#navbar {
+  background-color: #0e79b2;
+  border: 2px solid #fbfef9;
+  border-radius: 20px;
+  width: 280px;
+  height: auto;
+  padding: 10px 20px;
+}
