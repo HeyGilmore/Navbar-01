@@ -2,7 +2,8 @@
 import "../css/styles.css";
 // User Profile Image
 import profileImage from "../img/user01.jpg";
-
+// Menu Button
+import menuBtn from "../js/menuBtn";
 
 // Image Wrapper
 const imgWrapper = document.createElement("section");
@@ -32,4 +33,4 @@ img01.style.objectPosition = "100% 10%";
 imgWrapper.appendChild(img01);
 document.getElementById("profileImg").appendChild(imgWrapper);
 
-
+menuBtn();
