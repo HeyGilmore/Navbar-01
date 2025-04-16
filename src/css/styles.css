@@ -26,4 +26,30 @@ body {
   width: 280px;
   height: auto;
   padding: 10px 20px;
+  position: relative;
+}
+
+/* Menu Container */
+#menuButton {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%); /* Adjust to perfectly center vertically */
+}
+
+/*- Menu Button -*/
+.menu-btn {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+}
+/* Menu Button Lines */
+.btn-line {
+  background-color: #fbfef9;
+  height: 3px;
+  width: 100%;
+  border-radius: 20%;
 }
