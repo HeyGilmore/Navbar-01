@@ -4,6 +4,8 @@ import "../css/styles.css";
 import profileImage from "../img/user01.jpg";
 // Menu Button
 import menuBtn from "../js/menuBtn";
+// Menu Button Functionality
+import menuBtnFunctionality from "./menuBtnFunctionality";
 
 // Image Wrapper
 const imgWrapper = document.createElement("section");
@@ -34,3 +36,4 @@ imgWrapper.appendChild(img01);
 document.getElementById("profileImg").appendChild(imgWrapper);
 
 menuBtn();
+menuBtnFunctionality();
