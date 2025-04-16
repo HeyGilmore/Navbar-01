@@ -1,4 +1,4 @@
-import homeButtonFunction from "../js/homeButtonFunction";
+import homeButtonFunction from "./homeButtonFunction";
 
 export default function menuBtnFunctionality() {
   const menuBtn = document.getElementById("menuButtonContainer");
@@ -25,6 +25,9 @@ export default function menuBtnFunctionality() {
       bottomLine.style.height = "3px";
       bottomLine.style.backgroundColor = "#fbfef9";
       bottomLine.style.transition = "all 0.3s ease";
+
+      // Showcase of Home Button
+      homeButtonFunction();
     } else {
       // change status of menu button to close
       menuBtn.classList.remove("closed");
