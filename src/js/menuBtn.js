@@ -1,11 +1,11 @@
 export default function menuBtn() {
-
   // grab menu button id
   const menuButtonContainer = document.getElementById("menuButton");
 
   // Create a div
   const menuBtn = document.createElement("div");
   menuBtn.classList.add("menu-btn"); // Creating a class
+  menuBtn.id = "menuButtonContainer";
 
   // Create line div
   const btnLine1 = document.createElement("div");
