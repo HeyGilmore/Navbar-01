@@ -71,17 +71,47 @@ body {
   border-radius: 20%;
 }
 
-/*--- Animation Up & Down  ---*/
-
-@keyframes moveUp {
-  from {
-    top: 0px;
-  }
-  to {
-    bottom: -60px; /* Final position */
-  }
+/*------ Hover Effect with Divs (About,Blog,Contact) -----*/
+.menu-option {
+  height: 70px;
+  width: auto;
+  position: absolute;
+  border: 2px solid #fbfef9;
+  border-radius: 20px 20px 0 0;
+  padding: 10px;
+  background-color: #0e79b2;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.menu-option:hover {
+  transform: translateY(20px);
+  background-color: #1da1f2;
+  cursor: pointer;
 }
 
-#homeDiv.animate-up {
-  animation: moveUp 1s ease-in-out forwards; /* Duration and easing */
+/*----- Animation Up - Menu Buttons  -----*/
+.animate-up {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+.animate-down {
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(20px);
+    opacity: 0;
+  }
 }

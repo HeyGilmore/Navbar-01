@@ -1,4 +1,4 @@
-import homeButtonFunction from "./homeButtonFunction";
+import menuOptionsAppear from "./homeButtonFunction";
 
 export default function menuBtnFunctionality() {
   const menuBtn = document.getElementById("menuButtonContainer");
@@ -27,7 +27,7 @@ export default function menuBtnFunctionality() {
       bottomLine.style.transition = "all 0.3s ease";
 
       // Showcase of Home Button
-      homeButtonFunction();
+      menuOptionsAppear();
     } else {
       // change status of menu button to close
       menuBtn.classList.remove("closed");
@@ -48,7 +48,7 @@ export default function menuBtnFunctionality() {
       bottomLine.style.transition = "all 0.3s ease"; // Smooth animation";
 
       // Showcase of Home Button
-      homeButtonFunction();
+      menuOptionsAppear();
     }
   });
 }
